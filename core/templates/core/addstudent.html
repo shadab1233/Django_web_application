@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{%block title %} Add Student {% endblock %}
+
+{%block body %}
+<div class="container col-8 mx-auto ">
+
+    <form class="mx-auto" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="form-control btn btn-primary">submit</button>
+      </form>
+
+</div>
+
+
+{% endblock %}
+
